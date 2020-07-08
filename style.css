@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: silver;
+}
+.btn {
+    width: 200px;
+    height: 40px;
+    margin: 40px auto;
+    border: honeydew solid 1px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.btn:hover {
+    border: black solid 1px;
+}
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.modal {
+    width: 350px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+    border: gray solid 2px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+.main {
+    width: 1050px;
+    height: 450px;
+    position: relative;
+    transition: .3s ease-in-out;
+}
+.home {
+    width: 350px;
+    height: 450px;
+    float: left;
+}
+.market {
+    width: 350px;
+    height: 450px;
+    float: left;
+}
+.basket {
+    width: 350px;
+    height: 450px;
+    float: left;
+}
+.header {
+    width: 100%;
+    height: 80px;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 15px;
+    border-bottom: grey solid 1px;
+}
+.content {
+    height: 370px;
+    width: 345px;
+    overflow-y: auto;
+}
+.discount, .store {
+    width: 300px;
+    height: 110px;
+    margin: 15px auto;
+    border: grey solid 1px;
+    padding: 10px;
+}
+button {
+    width: 120px;
+    height: 25px;
+    border: grey solid 1px;
+    background: white;
+    margin-bottom: 10px;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+.store img {
+    width: 150px;
+    height: 50px;
+    display: block;
+    float: left;
+    margin: 20px auto;
+}
+.store button {
+    margin-top: 35px;
+    margin-left: 8px;
+}
+.new-coupons {
+    width: 300px;
+    height: 150px;
+    margin: 100px auto;
+    text-align: center;
+    padding-top: 30px;
+}
+.new-coupons button {
+    width: 200px;
+    height: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: purple;
+    font-size: 16px;
+    color: white;
+}
+.new-coupons button:hover {
+    color: black;
+}
+.new-coupons p {
+    font-size: 18px;
+}
+button:hover {
+    color: purple;
+    border: purple solid 1px;
+}
+.icon {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 47px;
+    border-top: grey solid 1px;;
+}
+a {
+    margin: 10px auto;
+}
+.icon img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.7;
+    transition: .3s ease-in-out;
+}
+.icon img:hover {
+    opacity: 1;
+}
+.active {
+    filter: invert(12%) sepia(45%) saturate(7484%) hue-rotate(292deg) brightness(86%) contrast(113%);
+}
